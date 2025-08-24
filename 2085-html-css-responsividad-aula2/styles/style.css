@@ -29,6 +29,7 @@ body {
   display: flex;
   gap: 80px;
 }
+
 .header__menu__link {
   font-family: var(--fuente-montserrat);
   font-size: 1.5rem;
@@ -42,7 +43,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 82px;
 }
 
 .presentacion__contenido {
@@ -111,4 +111,18 @@ body {
   font-family: var(--fuente-krona);
   font-size: 1.5rem;
   font-weight: 400;
+}
+
+@media (max-width: 1200px) {
+  .header {
+    padding: 10%;
+  }
+
+.header__menu {
+  justify-content: center;
+}
+
+  .presentacion {
+    flex-direction: column-reverse;
+  }
 }
